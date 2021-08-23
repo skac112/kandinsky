@@ -5,11 +5,11 @@ import sbtcrossproject.CrossPlugin.autoImport.{CrossType, crossProject}
 val sharedSettings = Seq(
   name := "kandinsky",
   description := "Libary for creating vector graphics by composing simple functions into successfully more complex",
-  version := "0.1.0-SNAPSHOT",
+  version := "0.1.1-SNAPSHOT",
   organization := "skac112",
   scalaVersion := "2.12.8",
-  libraryDependencies += "skac112" %% "miro" % "1.1.0-SNAPSHOT",
-  libraryDependencies += "skac112" %% "vgutils" % "0.1.4-SNAPSHOT",
+  libraryDependencies += "skac112" %%% "miro" % "1.1.2-SNAPSHOT",
+  libraryDependencies += "skac112" %%% "vgutils" % "0.1.4-SNAPSHOT",
   libraryDependencies += "com.lihaoyi" %%% "utest" % "0.6.3" % "test",
 )
 
